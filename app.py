@@ -8,7 +8,7 @@ WORKDIR = tmpcarrier_job
 os.makedirs(WORKDIR, exist_ok=True)
 
 @app.route(run, methods=[POST])
-def run_job()
+def run_job():
     try
         kpi = request.files.get(kpi_file)
         sla = request.files.get(sla_file)
